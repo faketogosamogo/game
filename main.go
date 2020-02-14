@@ -1,18 +1,19 @@
 package main
 
 import (
-	"./game"
-	"./models"
+	"GuessNumber/controllers"
+	"GuessNumber/game"
+	"GuessNumber/models"
 	"github.com/gorilla/mux"
 	"log"
 	"math/rand"
 	"net/http"
 	"time"
 )
-import "./controllers"
+
 func main(){
 	rand.Seed(time.Now().UTC().UnixNano())
-	//TODO: доделать html странички и сделать авторизацию
+
 
 	gameManager, err := game.NewGameManager()
 	if err!=nil{
