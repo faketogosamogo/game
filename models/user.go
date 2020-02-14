@@ -8,7 +8,7 @@ type User struct {
 }
 
 func(db *DB) AddUser(user User) error{
-	_, err := db.Exec("insert into users (name, password) values($1,$2)", user.Name, user.Password)
+	_, err := db.Exec("insert into users (name, password) values($1, $2)", user.Name, user.Password)
 	if err!=nil{
 		log.Println(err.Error())
 	}
@@ -16,7 +16,7 @@ func(db *DB) AddUser(user User) error{
 }
 func (db *DB) GetUser(name string)(User, error){
 	user := User{}
-	row := db.QueryRow("select * from users where name=$1", name)
+	row := db.QueryRow("select * from users where name = $1", name)
 	err:= row.Scan(&user.Name, &user.Password)
 	if err!=nil{
 

@@ -2,12 +2,12 @@ package models
 
 import (
 	"database/sql"
+	_ "github.com/go-sql-driver/mysql"
 	"os"
-	_ "github.com/lib/pq"
 )
 
 var (
-	DriverName = "postgres"
+	DriverName = "mysql"
 	ConnectionString = os.Getenv("DATABASE_URL")
 )
 
