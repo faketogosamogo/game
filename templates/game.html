@@ -12,7 +12,7 @@
 <input type="button" id="btn_send" value="Отправить!" />
 
 <script>
-    var socket = new WebSocket('https://guessnumber1234.herokuapp.com/user/gameWS')
+    var socket = new WebSocket('ws://guessnumber1234.herokuapp.com/user/gameWS')
     var btn_send = document.getElementById('btn_send');
     var turns = document.getElementById('turns');
     var tb_number = document.getElementById('tb_number');
