@@ -4,11 +4,6 @@
 	"GodepVersion": "v80",
 	"Deps": [
 		{
-			"ImportPath": "github.com/go-sql-driver/mysql",
-			"Comment": "v1.5.0-1-gc4f1976",
-			"Rev": "c4f1976e433a0e5f4a0d612ee45c85f689076ae7"
-		},
-		{
 			"ImportPath": "github.com/google/uuid",
 			"Comment": "v1.1.1-7-gc2e93f3",
 			"Rev": "c2e93f3ae59f2904160ceaab466009f965df46d6"
@@ -22,6 +17,21 @@
 			"ImportPath": "github.com/gorilla/websocket",
 			"Comment": "v1.4.1",
 			"Rev": "c3e18be99d19e6b3e8f1559eea2c161a665c4b6b"
+		},
+		{
+			"ImportPath": "github.com/lib/pq",
+			"Comment": "v1.3.0-4-g9eb3fc8",
+			"Rev": "9eb3fc897d6fd97dd4aad3d0404b54e2f7cc56be"
+		},
+		{
+			"ImportPath": "github.com/lib/pq/oid",
+			"Comment": "v1.3.0-4-g9eb3fc8",
+			"Rev": "9eb3fc897d6fd97dd4aad3d0404b54e2f7cc56be"
+		},
+		{
+			"ImportPath": "github.com/lib/pq/scram",
+			"Comment": "v1.3.0-4-g9eb3fc8",
+			"Rev": "9eb3fc897d6fd97dd4aad3d0404b54e2f7cc56be"
 		}
 	]
 }

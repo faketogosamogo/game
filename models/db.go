@@ -2,12 +2,13 @@ package models
 
 import (
 	"database/sql"
-	_ "github.com/go-sql-driver/mysql"
-	)
+	"os"
+	_ "github.com/lib/pq"
+)
 
-const (
-	DriverName = "mysql"
-	ConnectionString = "root:1234@/guess_number"
+var (
+	DriverName = "postgres"
+	ConnectionString = os.Getenv("DATABASE_URL")
 )
 
 type DB struct {
