@@ -17,6 +17,7 @@ import (
 func main(){
 	rand.Seed(time.Now().UTC().UnixNano())
 	port := os.Getenv("PORT")
+	log.Println(port)
 
 	gameManager, err := game.NewGameManager()
 	if err!=nil{

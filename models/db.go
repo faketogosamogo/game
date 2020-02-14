@@ -3,11 +3,12 @@ package models
 import (
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql"
-	)
+	"os"
+)
 
-const (
+var (
 	DriverName = "mysql"
-	ConnectionString = "root:1234@/guess_number"
+	ConnectionString = os.Getenv("JAWSDB_URL")
 )
 
 type DB struct {
