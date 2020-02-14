@@ -1,7 +1,7 @@
 package game
 
 import (
-	"../models"
+	"GuessNumber/models"
 	"github.com/google/uuid"
 	"strings"
 )

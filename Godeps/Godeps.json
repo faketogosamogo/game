@@ -1,0 +1,30 @@
+{
+	"ImportPath": "GuessNumber",
+	"GoVersion": "go1.12",
+	"GodepVersion": "v80",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/go-sql-driver/mysql",
+			"Comment": "v1.5.0-1-gc4f1976",
+			"Rev": "c4f1976e433a0e5f4a0d612ee45c85f689076ae7"
+		},
+		{
+			"ImportPath": "github.com/google/uuid",
+			"Comment": "v1.1.1-7-gc2e93f3",
+			"Rev": "c2e93f3ae59f2904160ceaab466009f965df46d6"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Comment": "v1.7.4",
+			"Rev": "75dcda0896e109a2a22c9315bca3bb21b87b2ba5"
+		},
+		{
+			"ImportPath": "github.com/gorilla/websocket",
+			"Comment": "v1.4.1",
+			"Rev": "c3e18be99d19e6b3e8f1559eea2c161a665c4b6b"
+		}
+	]
+}

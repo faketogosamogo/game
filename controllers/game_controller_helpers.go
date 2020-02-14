@@ -1,9 +1,10 @@
 package controllers
 
 import (
+	"GuessNumber/game"
 	"github.com/gorilla/websocket"
 	"log"
-	"../game"
+
 	"time"
 )
 var GameManager *game.GameManager

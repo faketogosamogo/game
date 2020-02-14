@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"../models"
+	"GuessNumber/models"
 	"database/sql"
 	"github.com/google/uuid"
 	"log"

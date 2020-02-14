@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"../game"
+	"GuessNumber/game"
 	"github.com/gorilla/websocket"
 	"log"
 	"net/http"

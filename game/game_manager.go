@@ -1,7 +1,7 @@
 package game
 
 import (
-	"../models"
+	"GuessNumber/models"
 	"errors"
 	"math/rand"
 )
