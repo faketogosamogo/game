@@ -44,13 +44,14 @@ func AuthController(w http.ResponseWriter, r *http.Request){
 
 	if err!=nil{
 		if err== sql.ErrNoRows{
-			http.Error(w, "Ошибка авторизации!", 422)
+			http.Error(w, "Данного пользователя нет в бд!!", 422)
 			return
 		}
 		http.Error(w, "Ошибка получения пользователя", 500)
 		return
 	}
 	if user.Password!=password{
+
 		http.Error(w, "Ошибка авторизации!", 422)
 		return
 	}
