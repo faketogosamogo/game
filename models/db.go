@@ -8,7 +8,7 @@ import (
 
 var (
 	DriverName = "mysql"
-	ConnectionString = os.Getenv("DATABASE_URL")
+	ConnectionString = os.Getenv("JAWSDB_URL")
 )
 
 type DB struct {
