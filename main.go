@@ -8,12 +8,13 @@ import (
 	"log"
 	"math/rand"
 	"net/http"
+	"os"
 	"time"
 )
 
 func main(){
 	rand.Seed(time.Now().UTC().UnixNano())
-
+	port := os.Getenv("PORT")
 
 	gameManager, err := game.NewGameManager()
 	if err!=nil{
@@ -40,6 +41,6 @@ func main(){
 
 	http.Handle("/",r)
 
-	http.ListenAndServe("localhost:8080", nil)
+	http.ListenAndServe(":"+port, nil)
 
 }
