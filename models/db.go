@@ -3,12 +3,11 @@ package models
 import (
 	"database/sql"
 	_ "github.com/go-sql-driver/mysql"
-	"os"
 )
 
 var (
 	DriverName = "mysql"
-	ConnectionString = os.Getenv("DATABASE_URL")
+	ConnectionString = "mysql://kd13evgjkd707i0d:heo5tlc9fvcrg3kk@bbj31ma8tye2kagi.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ewzeh9unau2jof4l"//os.Getenv("DATABASE_URL")
 )
 
 type DB struct {
