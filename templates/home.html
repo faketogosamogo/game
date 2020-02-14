@@ -41,7 +41,7 @@
     btn_register.onclick = function () {
 
         const request = new XMLHttpRequest();
-        request.open('GET', 'http://localhost:8080/register');
+        request.open('GET', '/register');
         request.setRequestHeader('name', tb_name.value)
         request.setRequestHeader('password', tb_password.value)
         request.send();
@@ -54,7 +54,7 @@
     btn_auth.onclick = function () {
 
         const request = new XMLHttpRequest();
-        request.open('GET', 'http://localhost:8080/auth');
+        request.open('GET', '/auth');
         request.setRequestHeader('name', tb_name.value)
         request.setRequestHeader('password', tb_password.value)
         request.send();
@@ -73,21 +73,21 @@
     }
 
     btn_finished_games.onclick = function () {
-        window.open("http://localhost:8080/user/finished_games", "_blank");
+        window.open("/user/finished_games", "_blank");
     }
 
     btn_start_new_game.onclick = function () {
         document.cookie = "countOfDigits=" +count_digits.value ;
         document.cookie = "typeGame=0";
-        window.open("http://localhost:8080/user/game", "_blank");
+        window.open("/user/game", "_blank");
     }
     btn_check_records.onclick = function () {
         document.cookie = "countOfDigits=" +count_digits.value ;
-        window.open("http://localhost:8080/user/scoreboard", "_blank");
+        window.open("/user/scoreboard", "_blank");
     }
     btn_load_game.onclick = function () {
         document.cookie = "typeGame=1";
-        window.open("http://localhost:8080/user/game", "_blank");
+        window.open("/user/game", "_blank");
     }
 
 </script>

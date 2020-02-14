@@ -25,4 +25,3 @@ func NewDB(driver, conn string)(*DB, error){
 	}
 	return &DB{db}, nil
 }
-
