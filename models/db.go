@@ -2,13 +2,12 @@ package models
 
 import (
 	"database/sql"
-	_ "github.com/lib/pq"
-	"os"
-)
+	_ "github.com/go-sql-driver/mysql"
+	)
 
-var (
-	DriverName = "postgres"
-	ConnectionString = os.Getenv("DATABASE_URL")
+const (
+	DriverName = "mysql"
+	ConnectionString = "root:1234@/guess_number"
 )
 
 type DB struct {
@@ -25,3 +24,4 @@ func NewDB(driver, conn string)(*DB, error){
 	}
 	return &DB{db}, nil
 }
+
