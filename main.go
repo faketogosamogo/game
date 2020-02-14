@@ -2,10 +2,7 @@ package main
 
 import (
 	"GuessNumber/controllers"
-	"GuessNumber/game"
-	"GuessNumber/models"
 	"github.com/gorilla/mux"
-	"log"
 	"math/rand"
 	"net/http"
 	"os"
@@ -17,7 +14,7 @@ import (
 func main(){
 	rand.Seed(time.Now().UTC().UnixNano())
 	port := os.Getenv("PORT")
-	log.Println(port)
+	/*log.Println(port)
 
 	gameManager, err := game.NewGameManager()
 	if err!=nil{
@@ -28,7 +25,7 @@ func main(){
 		log.Println("Ошибка подключения к БД")
 	}
 	controllers.GameManager = gameManager
-
+*/
 
 	r := mux.NewRouter()
 	r.HandleFunc("/", controllers.HomeController)
