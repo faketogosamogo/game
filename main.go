@@ -24,7 +24,7 @@ func main(){
 	}
 	controllers.DB , err= models.NewDB(models.DriverName, models.ConnectionString)
 	if err!=nil{
-		log.Fatal("Ошибка подключения к БД")
+		log.Println("Ошибка подключения к БД")
 	}
 	controllers.GameManager = gameManager
 
